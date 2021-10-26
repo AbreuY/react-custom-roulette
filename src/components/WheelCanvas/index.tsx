@@ -75,7 +75,7 @@ const drawWheel = (
     for (let i = 0; i < data.length; i++) {
       const angle = startAngle + i * arc;
       const { style } = data[i];
-      ctx.fillStyle = (style && style.backgroundColor) as string;
+      ctx.fillStyle = (style && 'rgba(255, 255, 255, 0.5)') as string;
 
       ctx.beginPath();
       ctx.arc(centerX, centerY, outsideRadius, angle, angle + arc, false);
