@@ -1,4 +1,4 @@
-export const DEFAULT_BACKGROUND_COLORS = ['#00000020', '#00000020'];
+export const DEFAULT_BACKGROUND_COLORS = ['transparent', 'transparent'];
 export const DEFAULT_TEXT_COLORS = ['black'];
 export const DEFAULT_OUTER_BORDER_COLOR = 'black';
 export const DEFAULT_OUTER_BORDER_WIDTH = 5;

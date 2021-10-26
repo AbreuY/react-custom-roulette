@@ -52,9 +52,9 @@ const drawWheel = (
   const canvas = canvasRef.current;
   if (canvas?.getContext('2d')) {
     const ctx = canvas.getContext('2d') as CanvasRenderingContext2D;
-    ctx.clearRect(0, 0, 500, 500);
-    ctx.strokeStyle = 'transparent';
-    ctx.lineWidth = 0;
+    // ctx.clearRect(0, 0, 500, 500);
+    // ctx.strokeStyle = 'transparent';
+    // ctx.lineWidth = 0;
     // ctx.translate(0.5, 0.5)
 
     const arc = Math.PI / (QUANTITY / 2);
@@ -75,7 +75,7 @@ const drawWheel = (
     for (let i = 0; i < data.length; i++) {
       const angle = startAngle + i * arc;
       const { style } = data[i];
-      ctx.fillStyle = (style && 'rgba(255, 255, 255, 0.5)') as string;
+      ctx.fillStyle = (style && style.backgroundColor) as string;
 
       ctx.beginPath();
       ctx.arc(centerX, centerY, outsideRadius, angle, angle + arc, false);
