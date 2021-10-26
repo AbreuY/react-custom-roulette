@@ -91,8 +91,7 @@ export const Wheel = ({
         },
       };
     }
-    setWheelData(prev => [...prev, ...wheelDataAux]);
-    //setWheelData([...wheelDataAux]);
+    setWheelData([...wheelDataAux]);
     setIsDataUpdated(true);
   }, [data, backgroundColors, textColors]);
 
