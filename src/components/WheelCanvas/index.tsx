@@ -186,4 +186,4 @@ const WheelCanvas = ({
   return <WheelCanvasStyle ref={canvasRef} width={width} height={height} />;
 };
 
-export default React.memo(WheelCanvas);
+export default WheelCanvas;
