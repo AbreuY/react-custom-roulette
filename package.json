@@ -5,7 +5,7 @@
   "main": "./dist/bundle.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/effectussoftware/react-custom-roulette"
+    "url": "https://github.com/AbreuY/react-custom-roulette"
   },
   "keywords": [
     "react",
@@ -46,7 +46,7 @@
     "eslint": "^7.21.0",
     "eslint-config-airbnb-typescript-prettier": "^2.1.1",
     "eslint-plugin-react": "^7.22.0",
-    "husky": "^4.2.5",
+    "husky": "^4.3.8",
     "jest-canvas-mock": "^2.2.0",
     "prettier": "^2.0.5",
     "styled-components": "^5.1.1",
@@ -66,11 +66,12 @@
     "eject": "react-scripts eject",
     "format": "prettier --write src/**/*.{js,ts,tsx}",
     "lint": "eslint src/**/*.{js,ts,tsx}",
+    "prepare": "npm run build",
     "link-react": "cd example/node_modules/react && npm link && cd ../react-dom && npm link && cd ../../.. && npm link react react-dom"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "yarn format && yarn lint"
+      "pre-commit": "npm run format && npm run lint"
     }
   },
   "jest": {
